@@ -5,3 +5,4 @@ matplotlin
 seaborn
 imblearn
 statsmodels
+ipykernel
