@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 Algerian Forest Fire Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        h2 {
+            color: #d9534f;
+            margin-bottom: 10px;
+        }
+        form {
+            width: 50%;
+            background: white;
+            padding: 25px 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button[type="submit"] {
+            background-color: #d9534f;
+            color: white;
+            border: none;
+            margin-top: 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button[type="submit"]:hover {
+            background-color: #c9302c;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e7f3fe;
+            border-left: 5px solid #2196F3;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2> Algerian Forest Fire Prediction </h2>
+    <form action="{{ url_for('predict_Data')}}" method="post">
+        <label for="Temp">Temperature (°C):</label>
+        <input type="number" name="Temp" step="any" required>
+
+        <label for="RH">Relative Humidity (%):</label>
+        <input type="number" name="RH" step="any" required>
+
+        <label for="Ws">Wind Speed (km/h):</label>
+        <input type="number" name="Ws" step="any" required>
+
+        <label for="Rain">Rain (mm):</label>
+        <input type="number" name="Rain" step="any" required>
+
+        <label for="FFMC">Fine Fuel Moisture Code (FFMC):</label>
+        <input type="number" name="FFMC" step="any" required>
+
+        <label for="DMC">Duff Moisture Code (DMC):</label>
+        <input type="number" name="DMC" step="any" required>
+
+        <label for="ISI">Initial Spread Index (ISI):</label>
+        <input type="number" name="ISI" step="any" required>
+
+        <label for="DC">Drought Code (DC):</label>
+        <input type="number" name="DC" step="any" required>
+
+        <label for="BUI">Buildup Index (BUI):</label>
+        <input type="number" name="BUI" step="any" required>
+
+
+        <label for="Classes">Classes:</label>
+        <input type="number" name="Classes" step="any" required>
+
+        <label for="Region">Region:</label>
+        <input type="number" name="Region" step="any" required>
+
+
+            <button type="submit" value="Predict Fire Weather Index (FWI)">
+                Predict
+            </button>
+    </form>
+
+    {% if result_text %}
+    <div class="result">
+        <h3>{{ result_text }}</h3>
+    </div>
+    {% endif %}
+
+</body>
+</html>
