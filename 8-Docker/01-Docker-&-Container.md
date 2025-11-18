@@ -39,15 +39,19 @@ A container ensures **“It works on my machine” becomes “It works everywher
 ### Key Features of Containers:
 
 1. **Lightweight**
+
    They share the host OS kernel → uses fewer resources.
 
 2. **Portable**
+
    Run anywhere (Windows, Linux, Mac, Cloud).
 
 3. **Isolated**
+
    Each container runs independently.
 
 4. **Fast**
+
    Start in milliseconds (unlike virtual machines).
 
 ---
@@ -66,19 +70,19 @@ A container ensures **“It works on my machine” becomes “It works everywher
 
 1. No more dependency conflicts
 
-Python version issues, Node.js version mismatch, missing libraries → all solved.
+   Python version issues, Node.js version mismatch, missing libraries → all solved.
 
 2. Easy deployment
 
-Send the container image; the app runs instantly.
+   Send the container image; the app runs instantly.
 
 3. Consistency
 
-Same environment across development, testing, and production.
+   Same environment across development, testing, and production.
 
 4. Scalability
 
-Works easily with Kubernetes (K8s) for scaling.
+   Works easily with Kubernetes (K8s) for scaling.
 
 ---
 
@@ -127,10 +131,13 @@ CMD ["npm", "start"]
 ### **Simple Analogy**
 
 **Docker = Kitchen**
+
 **Image = Recipe**
+
 **Container = Prepared Dish**
 
 Recipe → make dish
+
 Image → run container
 
 ---
@@ -138,8 +145,11 @@ Image → run container
 ### Summary (Easy to Remember)
 
 * **Docker** is a platform for managing containers.
+
 * **Containers** are lightweight, portable environments to run apps.
+
 * They solve dependency, environment, and deployment problems.
+
 * Docker uses **images**, built with **Dockerfiles**, to run containers.
 
 ---
