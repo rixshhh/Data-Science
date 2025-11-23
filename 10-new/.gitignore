@@ -1,0 +1,65 @@
+# -------------------------
+# OS-generated files
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Logs and temp files
+# -------------------------
+logs/
+*.log
+*.out
+*.tmp
+*.temp
+
+# -------------------------
+# Environment variables
+# -------------------------
+.env
+.env.*
+!.env.example
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# -------------------------
+# Build and dependency folders
+# -------------------------
+node_modules/
+dist/
+build/
+out/
+.cache/
+
+# -------------------------
+# IDE / Editor settings
+# -------------------------
+.vscode/
+.idea/
+*.swp
+
+# -------------------------
+# Python specific
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# -------------------------
+# Java / JVM specific
+# -------------------------
+*.class
+target/
+.gradle/
+*.war
+*.jar
+
+# -------------------------
+# Backup files
+# -------------------------
+*.bak
+*.old
+*.orig

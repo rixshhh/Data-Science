@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: Machine_Learning_Project
+Version: 0.0.1
+Author: Rishikesh
+Author-email: rishhhfoundation@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: seaborn
