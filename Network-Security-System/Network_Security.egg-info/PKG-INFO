@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Network-Security
+Version: 0.0.1
+Author: Rishikesh
+Author-email: rishikeshmoon@gmail.com
+Requires-Dist: python-dotenv
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pymongo
+Requires-Dist: certifi
+Requires-Dist: pymongo[srv]==3.12
+Requires-Dist: scikit-learn
